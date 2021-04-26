@@ -1,0 +1,24 @@
+<app-nav-menu></app-nav-menu>
+
+<div class="container">
+  <h1 id="tableLabel">Markets</h1>
+
+  <p *ngIf="!markets"><em>Loading...</em></p>
+
+  <table class='table table-striped' aria-labelledby="tableLabel" *ngIf="markets">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let market of markets">
+        <td>{{ market.id }}</td>
+        <td>{{ market.title }}</td>
+        <td>{{ market.description }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

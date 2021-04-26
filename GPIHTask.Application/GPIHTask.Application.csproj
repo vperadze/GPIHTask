@@ -14,9 +14,4 @@
     <ProjectReference Include="..\GPIHTask.Domain\GPIHTask.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="CompanyOnMarketPriceCqrs\Commands\" />
-    <Folder Include="CompanyOnMarketPriceCqrs\Queries\" />
-  </ItemGroup>
-
 </Project>

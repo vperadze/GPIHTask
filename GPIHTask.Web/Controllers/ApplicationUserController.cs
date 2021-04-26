@@ -30,7 +30,7 @@ namespace GPIHTask.Web.Controllers
             return await Mediator.Send(new GetApplicationUserByIdQuery() { Id = id });
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("Login")]
         public async Task<ActionResult> Login([FromBody] LoginApplicationUserCommand command)
         {

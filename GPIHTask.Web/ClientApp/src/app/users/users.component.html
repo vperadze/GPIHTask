@@ -1,0 +1,24 @@
+<app-nav-menu></app-nav-menu>
+
+<div class="container">
+  <h1 id="tableLabel">Users</h1>
+
+  <p *ngIf="!users"><em>Loading...</em></p>
+
+  <table class='table table-striped' aria-labelledby="tableLabel" *ngIf="users">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>User Name</th>
+        <th>FullName</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{ user.id }}</td>
+        <td>{{ user.userName }}</td>
+        <td>{{ user.fullName }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

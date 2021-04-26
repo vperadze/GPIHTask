@@ -1,12 +1,10 @@
 using GPIHTask.Application;
 using GPIHTask.Application.Classes;
 using GPIHTask.Application.Interfaces;
-using GPIHTask.Domain.Entities;
 using GPIHTask.Persistence;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;

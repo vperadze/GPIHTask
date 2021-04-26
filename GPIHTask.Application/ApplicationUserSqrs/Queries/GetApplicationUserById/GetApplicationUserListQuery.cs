@@ -21,7 +21,7 @@ namespace GPIHTask.Application.ApplicationUserSqrs.Queries.GetApplicationUserByI
 
             public async Task<List<ApplicationUserDto>> Handle(GetApplicationUserListQuery request, CancellationToken cancellationToken)
             {
-                List<ApplicationUserDto> applicationUserDtos = null;
+                List<ApplicationUserDto> applicationUserDtos = new List<ApplicationUserDto>();
                 var applicationUsers = await _applicationDbContext.ApplicationUsers.ToListAsync();
                 foreach (var applicationUser in applicationUsers)
                 {

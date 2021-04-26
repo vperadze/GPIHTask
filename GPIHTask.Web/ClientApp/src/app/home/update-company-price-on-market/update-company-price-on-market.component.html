@@ -1,0 +1,18 @@
+<h2> Update Company Prices On Markets </h2>
+
+<div *ngFor="let market of markets">
+  <br />
+  <h3>{{ market.title }}</h3>
+  <div class="card-group">
+    <div *ngFor="let companyOnMarketPrice of companyOnMarketPrices | filterCompanyOnMarketPrice: market.id">
+
+      <div class="card col-lg-11" style="width: 12rem;">
+        <div class="card-body">
+          <h5 class="card-title">{{ companyOnMarketPrice.companyTitle }}</h5>
+          <input class="form-control" type="number" [(ngModel)]="companyOnMarketPrice.price" id="companyOnMarketPrice.id" />
+          <button class="btn btn-primary paddingLittle" (click)="updatePrice(companyOnMarketPrice)">Update</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

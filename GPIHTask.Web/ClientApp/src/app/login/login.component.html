@@ -1,0 +1,11 @@
+<form [formGroup]="checkoutForm" (submit)="onSubmit()" novalidate>
+  <div class="mb-4">
+    <label for="userName" class="form-label">User Name</label>
+    <input class="form-control" formControlName="userName" id="userName" name="userName">
+  </div>
+  <div class="mb-4">
+    <label for="password" class="form-label">Password</label>
+    <input type="password" formControlName="password" id="password" name="password" class="form-control">
+  </div>
+  <button type="submit" class="btn btn-primary">Login</button>
+</form>
