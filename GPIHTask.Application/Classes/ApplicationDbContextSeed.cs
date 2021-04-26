@@ -1,6 +1,7 @@
 ﻿using GPIHTask.Domain.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using System;
 
 namespace GPIHTask.Application.Classes
 {
@@ -12,7 +13,7 @@ namespace GPIHTask.Application.Classes
             modelBuilder.Entity<ApplicationUser>().HasData(
                   new ApplicationUser
                   {
-                      Id = 1,
+                      Id = Guid.NewGuid().ToString(),
                       UserName = "admin",
                       FullName = "Vakhtang Peradze",
                       PasswordHash = hasher.HashPassword(null, "admin")

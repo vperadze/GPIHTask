@@ -12,4 +12,8 @@
     <ProjectReference Include="..\GPIHTask.Application\GPIHTask.Application.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
 </Project>

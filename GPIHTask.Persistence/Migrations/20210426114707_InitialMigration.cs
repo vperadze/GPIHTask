@@ -10,8 +10,7 @@ namespace GPIHTask.Persistence.Migrations
                 name: "ApplicationUsers",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     UserName = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     FullName = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     PasswordHash = table.Column<string>(type: "nvarchar(max)", nullable: true)
@@ -80,7 +79,7 @@ namespace GPIHTask.Persistence.Migrations
             migrationBuilder.InsertData(
                 table: "ApplicationUsers",
                 columns: new[] { "Id", "FullName", "PasswordHash", "UserName" },
-                values: new object[] { 1, "Vakhtang Peradze", "AQAAAAEAACcQAAAAEF4xAEXSPyGw3xPCIDFZUfiKhniJ2dyz+ORCoH+4tguZ4k1MZ0CRixdBDKcDulix1Q==", "admin" });
+                values: new object[] { "087855c6-db47-4a9b-bb7e-b5d4b21f1cef", "Vakhtang Peradze", "AQAAAAEAACcQAAAAEInV6NCo7Mb+HJEQqfU39gNcodsOKLYU0S7N48CdGRkx1YDIH+LbhjlJ1h5hQzzNPQ==", "admin" });
 
             migrationBuilder.InsertData(
                 table: "Companies",

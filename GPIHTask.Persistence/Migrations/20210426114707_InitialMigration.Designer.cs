@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GPIHTask.Persistence.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20210425201922_InitialMigration")]
+    [Migration("20210426114707_InitialMigration")]
     partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -22,10 +22,8 @@ namespace GPIHTask.Persistence.Migrations
 
             modelBuilder.Entity("GPIHTask.Domain.Entities.ApplicationUser", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("FullName")
                         .HasColumnType("nvarchar(max)");
@@ -43,9 +41,9 @@ namespace GPIHTask.Persistence.Migrations
                     b.HasData(
                         new
                         {
-                            Id = 1,
+                            Id = "087855c6-db47-4a9b-bb7e-b5d4b21f1cef",
                             FullName = "Vakhtang Peradze",
-                            PasswordHash = "AQAAAAEAACcQAAAAEF4xAEXSPyGw3xPCIDFZUfiKhniJ2dyz+ORCoH+4tguZ4k1MZ0CRixdBDKcDulix1Q==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEInV6NCo7Mb+HJEQqfU39gNcodsOKLYU0S7N48CdGRkx1YDIH+LbhjlJ1h5hQzzNPQ==",
                             UserName = "admin"
                         });
                 });

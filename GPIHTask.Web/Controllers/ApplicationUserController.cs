@@ -32,9 +32,10 @@ namespace GPIHTask.Web.Controllers
 
         [HttpGet]
         [Route("Login")]
-        public async Task<ActionResult<ApplicationUserDto>> Login([FromBody] LoginApplicationUserCommand command)
+        public async Task<ActionResult> Login([FromBody] LoginApplicationUserCommand command)
         {
-            return await Mediator.Send(command);
+            var token = await Mediator.Send(command);
+            return Ok(new { token });
         }
 
         [HttpPost]
