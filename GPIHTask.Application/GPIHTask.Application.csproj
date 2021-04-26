@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.10.2" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.10.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GPIHTask.Domain\GPIHTask.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="CompanyOnMarketPriceCqrs\Commands\" />
+    <Folder Include="CompanyOnMarketPriceCqrs\Queries\" />
+  </ItemGroup>
+
+</Project>

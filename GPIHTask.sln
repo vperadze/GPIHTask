@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GPIHTask.Web", "GPIHTask.Web\GPIHTask.Web.csproj", "{F918D637-1F7F-482B-8FA8-88834D0454BC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{5169364D-7321-463C-9A4D-A2E032BFD932}"
+	ProjectSection(SolutionItems) = preProject
+		Resources\Task - GPIH.pdf = Resources\Task - GPIH.pdf
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{EAA260D8-5F6F-4B3C-B94B-2B19CB53A933}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{8D0051CD-1C02-482C-9CAB-92F7D0AB0A7E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{4A836E03-12C7-4562-8F1C-C7EFAD16B4B0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{F14F6E10-86CD-4AF6-A578-E3404F4DF0AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPIHTask.Application", "GPIHTask.Application\GPIHTask.Application.csproj", "{EE9FE189-A4F2-4EB6-AF5D-FC251816FE31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPIHTask.Domain", "GPIHTask.Domain\GPIHTask.Domain.csproj", "{AD8BFE1C-A608-4E79-A591-8A1EA9EAD01B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPIHTask.Persistence", "GPIHTask.Persistence\GPIHTask.Persistence.csproj", "{7D126619-6124-4450-966F-A7CA5A5ACD32}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F918D637-1F7F-482B-8FA8-88834D0454BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F918D637-1F7F-482B-8FA8-88834D0454BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F918D637-1F7F-482B-8FA8-88834D0454BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F918D637-1F7F-482B-8FA8-88834D0454BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE9FE189-A4F2-4EB6-AF5D-FC251816FE31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE9FE189-A4F2-4EB6-AF5D-FC251816FE31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE9FE189-A4F2-4EB6-AF5D-FC251816FE31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE9FE189-A4F2-4EB6-AF5D-FC251816FE31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD8BFE1C-A608-4E79-A591-8A1EA9EAD01B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD8BFE1C-A608-4E79-A591-8A1EA9EAD01B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD8BFE1C-A608-4E79-A591-8A1EA9EAD01B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD8BFE1C-A608-4E79-A591-8A1EA9EAD01B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D126619-6124-4450-966F-A7CA5A5ACD32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D126619-6124-4450-966F-A7CA5A5ACD32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D126619-6124-4450-966F-A7CA5A5ACD32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D126619-6124-4450-966F-A7CA5A5ACD32}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F918D637-1F7F-482B-8FA8-88834D0454BC} = {F14F6E10-86CD-4AF6-A578-E3404F4DF0AC}
+		{8D0051CD-1C02-482C-9CAB-92F7D0AB0A7E} = {EAA260D8-5F6F-4B3C-B94B-2B19CB53A933}
+		{4A836E03-12C7-4562-8F1C-C7EFAD16B4B0} = {EAA260D8-5F6F-4B3C-B94B-2B19CB53A933}
+		{F14F6E10-86CD-4AF6-A578-E3404F4DF0AC} = {EAA260D8-5F6F-4B3C-B94B-2B19CB53A933}
+		{EE9FE189-A4F2-4EB6-AF5D-FC251816FE31} = {8D0051CD-1C02-482C-9CAB-92F7D0AB0A7E}
+		{AD8BFE1C-A608-4E79-A591-8A1EA9EAD01B} = {4A836E03-12C7-4562-8F1C-C7EFAD16B4B0}
+		{7D126619-6124-4450-966F-A7CA5A5ACD32} = {4A836E03-12C7-4562-8F1C-C7EFAD16B4B0}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A04950F8-8AE5-4DA7-AC25-6583FC3CD0FD}
+	EndGlobalSection
+EndGlobal
